@@ -1,0 +1,163 @@
+body,h1,h2,h3,h4,p,
+ul[class],ol[class],li,
+figure,figcaption,blockquote,
+dl,dd {
+  margin: 0;
+}
+body{
+	max-width: 100%;
+	background: url(../img/bg_level_1.jpg);
+	background-size: 100%;
+	background-position: center cover;
+	background-repeat: no-repeat;
+	
+	.wrapper{
+		height:100vh;
+		display: flex;
+		flex-direction: column;
+		.name-page{
+			
+			color: #91000d;
+			font-size: 3vw;
+			padding-top: 2vh;
+			margin: auto;
+		}
+		.content{
+			display: flex;
+			justify-content:space-around;
+			flex-grow:1;
+			padding-top: 1vh;
+			padding-bottom: 2vh;
+			.player{
+				flex-grow:0;
+				align-self: flex-end;
+				bottom: 0px;
+				.player-block{
+					display: flex;
+					align-items: center;
+	   				align-content: center; 
+	   				justify-content: center;
+	   				flex-grow:0;
+					.player-image{
+						
+
+						margin-bottom: 3vh;
+						flex-grow:0;
+						border: 4 px solid red;						
+					}
+					.player-info{
+						flex-grow:0;
+						width: 12vw;
+						height: 30vh;
+						color: #000;
+						font-size: 4vh;
+						background: url('../img/stats-panel.png');
+						background-size: 100%;
+						background-position: center cover;
+						background-repeat: no-repeat;
+						padding-top: 3vh;
+						padding-left: 3vh;
+						p{
+							margin-top: 1vh;
+							margin-left: 4vh;
+						}
+						p:first-child{
+							margin-bottom: 15px;
+							margin-left: -2px;
+							text-align: center;
+						}
+						p:last-child{
+							text-align: center;
+							margin-left: -2px;
+						}
+					}
+				}
+				
+			}
+			.icons{
+				width: 12vw;
+				height: 35vh;
+				margin-top: -6vh;
+				align-self: center;
+				background: url('../img/icon_battle1.png');
+				background-size: 100%;
+				background-repeat: no-repeat;
+
+			}
+			.computer{
+				flex-grow:0;
+				align-self: flex-start;
+				.computer-block{
+					display: flex;
+					align-items: center;
+	   				align-content: center; 
+	   				justify-content: center;
+	   				flex-grow:0;
+					.computer-image{
+						margin-top: 5vh;
+						margin-left: 1vh;
+						flex-grow:0;
+					}
+					.computer-info{
+						flex-grow:0;
+						width: 12vw;
+						height: 30vh;
+						color: black;
+						font-size: 3.5vh;
+						background: url('../img/stats-panel.png');
+						background-size: 100%;
+						background-position: center cover;
+						background-repeat: no-repeat;
+						margin-top: 5vh;
+						padding-top: 3vh;
+						padding-left: 3vh;
+						p{
+							margin-top: 1vh;
+							margin-left: 4vh;
+						}
+						p:first-child{
+							margin-bottom: 15px;
+							padding-left: 1vh;
+						}
+						p:last-child{
+							margin-left: -2px;
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
+	}
+	.arrow-next-lvl{
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		display: none;
+		img{
+			width: 10vw;
+			height: 5vh;
+		}
+	}
+}
+
+.shaking {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+}
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
